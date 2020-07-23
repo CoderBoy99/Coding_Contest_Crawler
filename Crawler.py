@@ -25,22 +25,22 @@ print('Date : '+date_list[3]+" "+date_list[4]+" "+date_list[5])
 print('Timing : '+date_list[-3]+" "+date_list[-2]+'\n\n')
 
 
-url_code_forces = r'https://codeforces.com/'
-driver.get(url_code_forces)
-time.sleep(5)
-
-ele = driver.find_element_by_xpath('//*[@id="sidebar"]/div[1]/div[4]/div[1]/a[1]')
-ele.click()
-time.sleep(5)
-contest = driver.find_element_by_css_selector("td:nth-child(1)").text
-print('For Codeforces - ')
-print('Contest Name : '+contest)
-start_time = driver.find_element_by_css_selector("td:nth-child(3)").text
-list = start_time.split(' ')
-date = list[0]
-print(date)
-time = list[1]
-print(time+'\n\n')
+# url_code_forces = r'https://codeforces.com/'
+# driver.get(url_code_forces)
+# time.sleep(5)
+#
+# ele = driver.find_element_by_xpath('//*[@id="sidebar"]/div[1]/div[4]/div[1]/a[1]')
+# ele.click()
+# time.sleep(5)
+# contest = driver.find_element_by_css_selector("td:nth-child(1)").text
+# print('For Codeforces - ')
+# print('Contest Name : '+contest)
+# start_time = driver.find_element_by_css_selector("td:nth-child(3)").text
+# list = start_time.split(' ')
+# date = list[0]
+# print(date)
+# time = list[1]
+# print(time+'\n\n')
 
 
 url_leet_code = r'https://leetcode.com/contest/'
